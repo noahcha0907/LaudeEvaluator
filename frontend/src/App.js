@@ -19,11 +19,11 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center py-12">
-      <h1 className="text-4xl font-extrabold mb-6 text-center">Laude</h1>
-      <p className="mb-6 text-gray-600">Backend status: {status ?? "loading..."}</p>
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-50 p-4">
+      <h1 className="text-6xl font-extrabold text-center">Laude</h1>
+      <p className="text-lg text-gray-600 mt-2 mb-8">Backend status: {status ?? "loading..."}</p>
 
-      <div className="w-full max-w-md">
+      <div className="w-full max-w-lg space-y-4">
         <UploadForm onUpload={handleUpload} />
 
         <div className="space-y-4">
